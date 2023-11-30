@@ -3,7 +3,6 @@ import requests
 import pandas as pd
 import streamlit as st
 from datetime import date, timedelta
-from st_aggrid import AgGrid
 from awesome_table import AwesomeTable
 from awesome_table import Column 
 from awesome_table import ColumnDType
@@ -44,71 +43,3 @@ AwesomeTable(df, columns=[
     Column(name='owner_s_last_name', label='Owner Last Name'),
     Column(name='owner_s_phone__', label='Owner Phone Number'),
 ], show_order=True, show_search=True, show_search_order_in_sidebar=True)
-
-
-
-# grid_options = {
-#     "columnDefs": [
-#         {
-#             "headerName": "Borough",
-#             "field": "borough",
-#             "editable": False,
-#         },
-#         {
-#             "headerName": "Street Name",
-#             "field": "street_name",
-#             "editable": False,
-#         },
-#         {
-#             "headerName": "Permitee First Name",
-#             "field": "permittee_s_first_name",
-#             "editable": False,
-#         },
-#         {
-#             "headerName": "Permitee Last Name",
-#             "field": "permittee_s_last_name",
-#             "editable": False,
-#         },
-#         {
-#             "headerName": "Permitee Business Name",
-#             "field": "permittee_s_business_name",
-#             "editable": False,
-#         },
-#         {
-#             "headerName": "Permitee Phone Number",
-#             "field": "permitee_s_phone__",
-#             "editable": False,
-#         },
-#         {
-#             "headerName": "Owner Business Name",
-#             "field": "owner_s_business_name",
-#             "editable": False,
-#         },
-#         {
-#             "headerName": "Owner First Namer",
-#             "field": "owner_s_first_name",
-#             "editable": False,
-#         },
-#         {
-#             "headerName": "Owner Last Name",
-#             "field": "owner_s_last_name",
-#             "editable": False,
-#         },
-#         {
-#             "headerName": "Owner Phone Number",
-#             "field": "owner_s_phone__",
-#             "editable": False,
-#         },
-#         {
-#             "headerName": "Permit Issue Date",
-#             "field": "issuance_date",
-#             "editable": False,
-#         },
-#     ],
-# }
-
-# AgGrid(df, grid_options)
-# df.head()
-
-# # %%
-# %%
