@@ -1,11 +1,13 @@
 #%%
 import requests
+from pandas.io.json import json_normalize
 import pandas as pd
 import streamlit as st
 from datetime import date, timedelta
 from awesome_table import AwesomeTable
 from awesome_table import Column 
-from awesome_table import ColumnDType
+
+
 today = date.today()
 
 def daterange(start_date, end_date):
