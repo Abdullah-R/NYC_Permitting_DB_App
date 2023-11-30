@@ -1,4 +1,4 @@
 streamlit
-pandas
+pandas == 0.25
 awesome_table
 requests
