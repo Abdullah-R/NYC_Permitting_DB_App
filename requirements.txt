@@ -1,4 +1,4 @@
 streamlit
 pandas
+awesome_table
 requests
-streamlit-awesome-table
