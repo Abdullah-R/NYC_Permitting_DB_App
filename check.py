@@ -1,6 +1,5 @@
 #%%
 import requests
-from pandas.io.json import json_normalize
 import pandas as pd
 import streamlit as st
 from datetime import date, timedelta
@@ -33,9 +32,10 @@ with open('./output.xlsx', 'rb') as f:
    st.download_button('Download as Excel', f, file_name='NYC_Permits.xlsx')  # Defaults to 'application/octet-stream'
 
 AwesomeTable(df, columns=[
-    Column(name='issuance_date', label='Permit Issue Date'),
     Column(name='borough', label='Borough'),
     Column(name='street_name', label='Street Name'),
+    Column(name='issuance_date', label='Permit Issue Date'),
+    Column(name='job_start_date', label='Job Start Date'),
     Column(name='permittee_s_first_name', label='Permittee First Name'),
     Column(name='permittee_s_last_name', label='Permittee Last Name'),
     Column(name='permittee_s_business_name', label='Permittee Business Name'),
