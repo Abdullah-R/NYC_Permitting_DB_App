@@ -44,4 +44,4 @@ AwesomeTable(df, columns=[
     Column(name='owner_s_first_name', label='Owner First Name'),
     Column(name='owner_s_last_name', label='Owner Last Name'),
     Column(name='owner_s_phone__', label='Owner Phone Number'),
-], show_order=True, show_search=True, show_search_order_in_sidebar=True)
+], show_order=True, show_search=True, show_search_order_in_sidebar=False)
